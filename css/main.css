@@ -1,0 +1,238 @@
+/*------------------------------------------------------------------
+    [Main Style Stylesheet]
+    Project:       HTML Template
+    Version:        1.0
+    Author:         CizThemes
+    Skype:          congnd91
+    Author URI:     https://themeforest.net/user/cizthemes    
+    Last change:    13/07/2017
+-------------------------------------------------------------------
+-------------------------------------------------------------------*/
+h1,
+.h1 {
+  font-size: 35px; }
+
+h2,
+.h2 {
+  font-size: 30px; }
+
+h3,
+.h3 {
+  font-size: 25px; }
+
+h4,
+.h4 {
+  font-size: 20px; }
+
+h5,
+.h5 {
+  font-size: 18px; }
+
+h6,
+.h6 {
+  font-size: 15px;
+  font-family: Microsoft JhengHei, sans-serif; }
+
+/*==========Setting=========*/
+html {
+  font-size: 100%; }
+
+body {
+  background-color: #fff;
+  font-family: Microsoft JhengHei, sans-serif;
+  min-width: 320px;
+  font-size: 22px;
+  line-height: 1.5; }
+
+dt,
+dd {
+  line-height: 1.5; }
+
+body,
+html {
+  height: 100%; }
+
+a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+a {
+  color: inherit; }
+
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit; }
+
+img {
+  max-width: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.3;
+  font-family: Microsoft JhengHei, sans-serif;
+  font-weight: 700; }
+
+iframe {
+  width: 100%;
+  border: none; }
+
+::selection {
+  background: #e5572b;
+  color: #fff; }
+
+/*==========Components=========*/
+.my-btn {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0px 30px;
+  font-family: Microsoft JhengHei, sans-serif;
+  color: #fff;
+  background-color: #252525;
+  letter-spacing: 2px;
+  margin: 0px 0px 0px 0px;
+  text-transform: uppercase;
+  border: none;
+  -moz-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s; }
+  .my-btn:hover {
+    background-color: #e5572b;
+    outline: none;
+    color: #fff; }
+  .my-btn.active {
+    background-color: #e5572b;
+    outline: none;
+    color: #fff; }
+    .my-btn.active:hover {
+      opacity: 0.8; }
+
+.row-fix {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .row-fix .col-fix {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+.wrap {
+  max-width: 1300px;
+  padding: 0px 20px;
+  margin: 0px auto; }
+  @media (min-width: 768px) {
+    .wrap {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .wrap {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .wrap {
+      width: 1170px; } }
+  @media (min-width: 1360px) {
+    .wrap {
+      width: 1300px; } }
+
+.header {
+  background-color: #e5572b; }
+  .header .header-top {
+    padding: 30px 0px 25px 0px; }
+    @media screen and (max-width: 767px) {
+      .header .header-top {
+        padding: 15px 0px; } }
+    .header .header-top a.logo {
+      float: left; }
+      .header .header-top a.logo img {
+        width: 220px; }
+        @media screen and (max-width: 1199px) {
+          .header .header-top a.logo img {
+            width: 150px; } }
+        @media screen and (max-width: 767px) {
+          .header .header-top a.logo img {
+            width: 100px;
+            display: block;
+            margin-top: 10px; } }
+    .header .header-top .menu {
+      float: left;
+      margin: 20px 0px 0px 20px; }
+      @media screen and (max-width: 1199px) {
+        .header .header-top .menu {
+          margin: 10px 0px 0px 10px; } }
+      .header .header-top .menu ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px; }
+        .header .header-top .menu ul li {
+          display: inline-block; }
+          .header .header-top .menu ul li a {
+            font-size: 28px;
+            color: #fff;
+            display: block;
+            margin: 0px 25px;
+            -moz-transition: all ease 0.2s;
+            -o-transition: all ease 0.2s;
+            -webkit-transition: all ease 0.2s;
+            transition: all ease 0.2s; }
+            @media screen and (max-width: 1199px) {
+              .header .header-top .menu ul li a {
+                font-size: 18px; } }
+            @media screen and (max-width: 991px) {
+              .header .header-top .menu ul li a {
+                margin: 0px 15px; } }
+          .header .header-top .menu ul li.active a {
+            color: #eee024; }
+          .header .header-top .menu ul li:hover a {
+            color: #eee024; }
+    .header .header-top .header-top-right {
+      float: right;
+      margin: 20px 0px 0px 0px; }
+      @media screen and (max-width: 1199px) {
+        .header .header-top .header-top-right {
+          margin: 10px 0px 0px 0px; } }
+      .header .header-top .header-top-right a {
+        float: left;
+        margin: 0px 5px; }
+        .header .header-top .header-top-right a.user span {
+          background-image: url(../images/icon_people.png);
+          width: 30px;
+          height: 39px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          display: block; }
+          @media screen and (max-width: 1199px) {
+            .header .header-top .header-top-right a.user span {
+              width: 20px;
+              height: 28px; } }
+        .header .header-top .header-top-right a.cart span {
+          background-image: url(../images/icon_cart.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          width: 38px;
+          height: 39px;
+          display: block; }
+          @media screen and (max-width: 1199px) {
+            .header .header-top .header-top-right a.cart span {
+              width: 22px;
+              height: 28px; } }
+        .header .header-top .header-top-right a.htr-social {
+          color: #fff;
+          color: #fff;
+          font-size: 30px;
+          line-height: 39px; }
+          @media screen and (max-width: 1199px) {
+            .header .header-top .header-top-right a.htr-social {
+              line-height: 28px;
+              font-size: 22px; } }
+
+/*# sourceMappingURL=main.css.map */
