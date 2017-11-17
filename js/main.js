@@ -1,4 +1,3 @@
-
 (function ($) {
     $(document).on('ready', function () {
         "use strict";
@@ -7,19 +6,50 @@
             $('body').fadeIn();
         });
         /** slider**/
-        var owl_contest = $('.owl-contest')
-        $(owl_contest).owlCarousel({
+        var owl_home = $('.owl-home')
+        $(owl_home).owlCarousel({
             loop: true,
             margin: 0,
-            nav: false,
+            nav: true,
             autoplay: true,
-            autoplayTimeout:6000,
-            items: 1,
-            animateOut: 'fadeOutDown',
-            animateIn: 'fadeInDown',
+            autoplayTimeout: 4000,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                480: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                },
+
+                1200: {
+                    items: 4
+                }
+            }
+
         });
 
-        $('.open-test-right').click(function(){
+        //Search option
+        $('.option-value').click(function () {
+
+            var dropdown = $(this).parent().find('.search-dropdown');
+            if ($(dropdown).is(":visible")) {
+                $(dropdown).slideUp();
+            } else {
+                $(dropdown).slideDown();
+            }
+
+
+
+        });
+
+        $('.search-dropdown a').click(function () {
+            $('.search-dropdown').slideUp();
+        });
+
+        $('.open-test-right').click(function () {
             $('body').addClass("show-test-right");
         });
         $('.close-test-right').click(function () {
@@ -40,5 +70,5 @@
             $('.user-panel').toggleClass("show-user-menu");
         });
 
-        });
-    })(jQuery);
+    });
+})(jQuery);
