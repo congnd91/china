@@ -31,6 +31,31 @@
 
         });
 
+        /** slider**/
+        var owl_cate_slider = $('.owl-cate-slider')
+        $(owl_cate_slider).owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            items: 1
+
+        });
+
+
+        /** slider qrcode**/
+        var owl_qr = $('.owl-qr')
+        $(owl_qr).owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            items: 1
+
+        });
+
         //Search option
         $('.option-value').click(function () {
 
@@ -45,29 +70,35 @@
 
         });
 
+        //switch view
+
+        $('.cl-switch span').click(function () {
+            $('.view-active').removeClass('view-active');
+            $(this).addClass("view-active");
+            $('.view-style').hide();
+            var id = $(this).attr("data-id");
+            $(id).show();
+
+
+        });
+
         $('.search-dropdown a').click(function () {
             $('.search-dropdown').slideUp();
         });
 
-        $('.open-test-right').click(function () {
-            $('body').addClass("show-test-right");
-        });
-        $('.close-test-right').click(function () {
-            $('body').removeClass("show-test-right");
-        });
+        //accdion
 
-        //show test-button
-        $('.box-answer').click(function () {
-            $('body').addClass("show-test-bottom");
-        });
-        $('.close-test-bottom').click(function () {
-            $('body').removeClass("show-test-bottom");
-        });
+        var caption = $('.acc-caption');
+        $(caption).click(function () {
 
-        //menu user
+            var content = $(this).next();
 
-        $('.user-info').click(function () {
-            $('.user-panel').toggleClass("show-user-menu");
+            if ($(content).is(":visible")) {
+                $(content).slideUp();
+            } else {
+                $(content).slideDown();
+            }
+
         });
 
     });

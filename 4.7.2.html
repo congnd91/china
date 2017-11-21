@@ -78,92 +78,159 @@
     </header>
     <!--home-carousel-->
     <div class="wrap">
+        <div class="order-page">
+            <div class="order-process-wrap">
+                <div class="order-process">
+                    <div class="order-step active">
+                        <span>1</span>
+                        <p>我的訂貨單</p>
+                    </div>
+                    <div class="order-line active"></div>
+                    <div class="order-step active">
+                        <span>2</span>
+                        <p>填寫資料</p>
+                    </div>
+                    <div class="order-line"></div>
+                    <div class="order-step">
+                        <span>3</span>
+                        <p>完成訂單</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-caption">
+                <h3>訂貨單總額</h3>
+            </div>
 
-        <div class="home-cate">
+            <div class="oder-sum">
+                <div class="os-item">
+                    <p>300元</p>
+                    <span>(消費總額)</span>
+                </div>
+                <div class="os-item">
+                    <p>+</p>
+                    <span>&nbsp;</span>
 
-            <div class="row row-fix">
+                </div>
+                <div class="os-item">
+                    <p>150元</p>
+                    <span>(運費)</span>
+                </div>
 
-                <div class="col-md-3 col-sm-4 col-xs-6 col-fix">
-                    <div class="hc-item">
-                        <a href="#">
-                    <img alt="" src="images/home_icon1.png">
-                    <p>3C產品</p>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6 col-fix">
-                    <div class="hc-item">
-                        <a href="#">
-                    <img alt="" src="images/home_icon2.png">
-                    <p>佛具</p>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6 col-fix">
-                    <div class="hc-item">
-                        <a href="#">
-                    <img alt="" src="images/home_icon3.png">
-                    <p>保溫壺</p>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6 col-fix">
-                    <div class="hc-item">
-                        <a href="#">
-                    <img alt="" src="images/home_icon4.png">
-                    <p>保溫瓶</p>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6 col-fix">
-                    <div class="hc-item">
-                        <a href="#">
-                    <img alt="" src="images/home_icon5.png">
-                    <p>個人護理用品</p>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6 col-fix">
+                <h5>合計450元</h5>
 
-                    <div class="hc-item">
-                        <a href="#">
-                    <img alt="" src="images/home_icon6.png">
-                    <p>免洗餐具</p>
-                    </a>
-                    </div>
+            </div>
+            <div class="order-caption">
+                <h3>付款方式</h3>
+            </div>
+
+            <div class="payment-choose">
+
+                <div class="payment-radio">
+                    <label>
+                       <input type="radio" name="payment">
+                    
+                    信用卡<span> (僅接受台灣各大銀行所發行的Visa、MasterCard、JCB信用卡)
+超商取貨付款</span>
+                </label>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-6 col-fix">
-                    <div class="hc-item">
-                        <a href="#">
-                    <img alt="" src="images/home_icon7.png">
-                    <p>公文林</p>
-                    </a>
-                    </div>
+
+                <div class="payment-radio">
+                    <label>
+                       <input type="radio" name="payment">
+                    超商取貨付款
+                </label>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-6 col-fix">
-                    <div class="hc-item">
-                        <a href="#">
-                    <img alt="" src="images/home_icon8.png">
-                    <p>冷水壺</p>
-                    </a>
+
+                <div class="note-payment">
+                    <p>以上交易透過綠界科技第三方支付平台，買賣雙方安全有保障</p>
+                </div>
+            </div>
+
+            <div class="order-caption">
+                <h3>收件人資訊 <a href="#">同會員資料</a></h3>
+            </div>
+
+            <div class="setup-doc">
+                <div class="doc-row">
+                    <span>會員姓名</span>
+
+                    <div class="row row-fix">
+                        <div class="col-sm-8 col-xs-12 col-fix">
+                            <input type="text" placeholder="請填寫真實姓名">
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-fix">
+                            <div class="gender-radio">
+                                <label>
+                                      <input type="radio" name="gender">
+                                       先生
+                                      </label>
+                            </div>
+                            <div class="gender-radio">
+                                <label>
+                                      <input type="radio" name="gender">
+                                       小姐
+                                      </label>
+                            </div>
+                        </div>
                     </div>
+
+                </div>
+                <div class="doc-row">
+                    <span>市內電話</span>
+                    <input type="text">
+                </div>
+                <div class="doc-row">
+                    <span>行動電話</span>
+                    <input type="text">
+                </div>
+                <div class="doc-row">
+                    <span>聯絡地址</span>
+
+                    <div class="row row-fix">
+                        <div class="col-sm-2 col-xs-6 col-fix">
+                            <select>
+                            <option>縣市</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 col-xs-6 col-fix">
+                            <select>
+                            <option>地區</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-8 col-xs-12 col-fix">
+                            <input type="text">
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
-            <div class="paging">
-                <a href="#" class="prev">&nbsp;
-            </a>
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#" class="next"> &nbsp;
-            </a>
+            <div class="order-caption">
+                <h3>發票資訊 </h3>
             </div>
+
+            <div class="setup-doc">
+
+                <div class="doc-row">
+                    <span>發票抬頭</span>
+                    <input type="text">
+                </div>
+                <div class="doc-row">
+                    <span>統一編號</span>
+                    <input type="text">
+                </div>
+
+
+                <div class="to-control">
+                    <a href="#">上一步</a>
+                    <a href="#">下一步</a>
+                </div>
+
+            </div>
+
+
         </div>
-
     </div>
     <!--footer-->
     <footer class="footer">
@@ -243,10 +310,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
     <!--scrip file-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
