@@ -100,6 +100,66 @@
             }
 
         });
+        //slider detail
 
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: false,
+            asNavFor: '.slider-nav',
+            autoplay: false,
+            autoplaySpeed: 5000,
+
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            arrows: false,
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+            autoplay: false,
+            autoplaySpeed: 6000,
+            vertical: true
+        });
+
+
+
+        $('.slider-for img').click(function () {
+            $('#modal-cart').modal('show');
+
+            // $('.slider-for1').resize();
+            // $('.slider-nav1').resize();
+        });
+
+
+        $('#modal-cart').on('shown.bs.modal', function (e) {
+            $('.slider-for1').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav1',
+                autoplay: false,
+                autoplaySpeed: 5000,
+
+            });
+            $('.slider-nav1').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for1',
+                arrows: false,
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true,
+                autoplay: false,
+                autoplaySpeed: 6000,
+                vertical: true
+            });
+
+
+        });
     });
 })(jQuery);
