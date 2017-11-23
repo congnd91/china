@@ -264,6 +264,8 @@ iframe {
             .header .header-top .header-top-right a.htr-social {
               line-height: 28px;
               font-size: 22px; } }
+          .header .header-top .header-top-right a.htr-social i.fa-youtube {
+            color: #b00; }
 
 .menu-res {
   text-align: center;
@@ -698,6 +700,8 @@ iframe {
   position: relative;
   min-height: 120px;
   text-align: center; }
+  .footer-col strong:last-child .btn-like {
+    background-color: #fff; }
   @media screen and (max-width: 991px) {
     .footer-col {
       float: none;
@@ -746,7 +750,11 @@ iframe {
     .footer-col .f-icon.f-icon-facebook {
       background-image: url(../images/icon_facebook.png); }
     .footer-col .f-icon.f-icon-android {
-      background-image: url(../images/icon_android.png); }
+      background-image: url(../images/icon_android.png);
+      display: inline-block; }
+    .footer-col .f-icon.f-icon-ios {
+      background-image: url(../images/icon_ios.png);
+      display: inline-block; }
     @media screen and (max-width: 991px) {
       .footer-col .f-icon {
         width: 22px;
@@ -757,6 +765,9 @@ iframe {
           width: 18px;
           height: 14px; } }
 
+.block {
+  display: block; }
+
 .btn-like {
   background-color: #fff;
   border-radius: 4px;
@@ -765,7 +776,8 @@ iframe {
   width: 50px;
   line-height: 20px;
   height: 20px;
-  display: inline-block; }
+  display: inline-block;
+  background-color: #3b5998; }
   .btn-like i {
     float: left;
     background-image: url(../images/icon_like.png);

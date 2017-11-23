@@ -280,6 +280,9 @@ iframe {
                         line-height: 28px;
                         font-size: 22px;
                     }
+                    i.fa-youtube {
+                        color: $brand-youtube;
+                    }
                 }
             }
         }
@@ -810,6 +813,14 @@ iframe {
     position: relative;
     min-height: 120px;
     text-align: center;
+    strong {
+        &:last-child {
+            .btn-like {
+                background-color: #fff;
+            }
+        }
+    }
+
     @media screen and (max-width: 991px) {
         float: none;
         display: inline-block;
@@ -856,6 +867,9 @@ iframe {
         margin: 0px auto;
         background-position: center center;
         background-repeat: no-repeat;
+
+
+
         &.f-icon-phone {
             background-image: url(../images/icon_phone.png);
         }
@@ -867,6 +881,11 @@ iframe {
         }
         &.f-icon-android {
             background-image: url(../images/icon_android.png);
+            display: inline-block;
+        }
+        &.f-icon-ios {
+            background-image: url(../images/icon_ios.png);
+            display: inline-block;
         }
         @media screen and (max-width: 991px) {
             width: 22px;
@@ -881,6 +900,10 @@ iframe {
     }
 }
 
+.block {
+    display: block;
+}
+
 .btn-like {
     background-color: #fff;
     border-radius: 4px;
@@ -890,6 +913,7 @@ iframe {
     line-height: 20px;
     height: 20px;
     display: inline-block;
+    background-color: $brand-facebook;
     i {
         float: left;
         background-image: url(../images/icon_like.png);
