@@ -12,3 +12,6 @@ serve
 
 edit by server
 
+
+edit location
+
