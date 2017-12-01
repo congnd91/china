@@ -182,15 +182,28 @@ iframe {
         }
         a.logo {
             float: left;
+            @media screen and (max-width: 991px) {
+                overflow: hidden;
+                width: 60px;
+                margin: -5px 0px 0px 0px;
+            }
             img {
-                width: 220px;
-                @media screen and (max-width: 1199px) {
-                    width: 150px;
+                width: 420px;
+                margin: 5px 0px 0px 0px;
+                @media screen and (max-width: 1370px) {
+                    width: 300px;
+                    margin: 15px 0px 0px 0px;
                 }
-                @media screen and (max-width: 767px) {
-                    width: 100px;
+                @media screen and (max-width: 1199px) {
+
+                    margin: 5px 0px 0px 0px;
+                }
+                @media screen and (max-width: 991px) {
+
                     display: block;
                     margin-top: 10px;
+                    width: 300px;
+                    max-width: 400px;
                 }
             }
         }
@@ -397,6 +410,7 @@ iframe {
         top: 8px;
         right: 15px;
         opacity: 0.9;
+        outline: none;
         &:hover {
             opacity: 1;
         }
@@ -792,10 +806,12 @@ iframe {
         }
     }
     .logo {
+
+
         img {
-            @media screen and (max-width: 1360px) {
-                width: 200px;
-            }
+            width: 250px;
+            padding: 17px 0px 0px 0px;
+            @media screen and (max-width: 1360px) {}
         }
     }
 }
@@ -2250,6 +2266,14 @@ iframe {
         margin: 20px 0px 0px 0px;
         min-height: 40px;
     }
+    &.doc-row-radio {
+        margin: 10px 0px 0px 0px;
+        .gender-radio {
+            margin: 0px 0px 0px -90px;
+
+
+        }
+    }
     &.doc-row-fix {
         margin: 0px;
         p {
@@ -2515,6 +2539,13 @@ iframe {
         border-left: 5px solid $base-color;
         margin: 0px;
         font-size: 32px;
+        padding: 0px 0px 0px 5px;
+        span.red {
+            color: red;
+            &.small {
+                font-size: 18px;
+            }
+        }
         a {
             font-size: 22px;
             padding: 0px 20px;

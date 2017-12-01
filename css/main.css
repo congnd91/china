@@ -181,16 +181,27 @@ iframe {
         padding: 15px 0px; } }
     .header .header-top a.logo {
       float: left; }
+      @media screen and (max-width: 991px) {
+        .header .header-top a.logo {
+          overflow: hidden;
+          width: 60px;
+          margin: -5px 0px 0px 0px; } }
       .header .header-top a.logo img {
-        width: 220px; }
+        width: 420px;
+        margin: 5px 0px 0px 0px; }
+        @media screen and (max-width: 1370px) {
+          .header .header-top a.logo img {
+            width: 300px;
+            margin: 15px 0px 0px 0px; } }
         @media screen and (max-width: 1199px) {
           .header .header-top a.logo img {
-            width: 150px; } }
-        @media screen and (max-width: 767px) {
+            margin: 5px 0px 0px 0px; } }
+        @media screen and (max-width: 991px) {
           .header .header-top a.logo img {
-            width: 100px;
             display: block;
-            margin-top: 10px; } }
+            margin-top: 10px;
+            width: 300px;
+            max-width: 400px; } }
     .header .header-top .menu {
       float: left;
       margin: 20px 0px 0px 20px; }
@@ -356,7 +367,8 @@ iframe {
     position: absolute;
     top: 8px;
     right: 15px;
-    opacity: 0.9; }
+    opacity: 0.9;
+    outline: none; }
     .search-box button:hover {
       opacity: 1; }
   @media screen and (max-width: 767px) {
@@ -684,9 +696,9 @@ iframe {
           padding: 10px 0px;
           display: block; } }
 
-@media screen and (max-width: 1360px) {
-  .footer-top .logo img {
-    width: 200px; } }
+.footer-top .logo img {
+  width: 250px;
+  padding: 17px 0px 0px 0px; }
 
 .footer-cols {
   margin: 40px 0px 0px 0px; }
@@ -1940,6 +1952,10 @@ iframe {
       padding: 0px 0px 0px 110px;
       margin: 20px 0px 0px 0px;
       min-height: 40px; } }
+  .doc-row.doc-row-radio {
+    margin: 10px 0px 0px 0px; }
+    .doc-row.doc-row-radio .gender-radio {
+      margin: 0px 0px 0px -90px; }
   .doc-row.doc-row-fix {
     margin: 0px; }
     .doc-row.doc-row-fix p {
@@ -2149,7 +2165,12 @@ iframe {
   .order-caption h3 {
     border-left: 5px solid #252525;
     margin: 0px;
-    font-size: 32px; }
+    font-size: 32px;
+    padding: 0px 0px 0px 5px; }
+    .order-caption h3 span.red {
+      color: red; }
+      .order-caption h3 span.red.small {
+        font-size: 18px; }
     .order-caption h3 a {
       font-size: 22px;
       padding: 0px 20px;
