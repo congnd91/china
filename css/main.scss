@@ -930,12 +930,19 @@ iframe {
     height: 20px;
     display: inline-block;
     background-color: $brand-facebook;
+    &:hover {
+        color: $active-color;
+    }
     i {
         float: left;
-        background-image: url(../images/icon_like.png);
-        width: 16px;
-        height: 15px;
-        margin: 2px 0px 0px 3px;
+        background-image: url(../images/fb_like.png);
+        width: 40px;
+        height: 30px;
+
+        margin: -5px 0px 0px 3px;
+    }
+    &.btn-like-icon {
+        background-color: transparent;
     }
 }
 
@@ -2291,6 +2298,10 @@ iframe {
             margin: 4px 0px 0px -110px;
             width: 100px;
             font-size: $font-size-sm;
+        }
+        em.red {
+            font-style: normal;
+            color: red;
         }
     }
     input {

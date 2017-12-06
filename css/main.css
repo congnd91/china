@@ -790,12 +790,16 @@ iframe {
   height: 20px;
   display: inline-block;
   background-color: #3b5998; }
+  .btn-like:hover {
+    color: #e5572b; }
   .btn-like i {
     float: left;
-    background-image: url(../images/icon_like.png);
-    width: 16px;
-    height: 15px;
-    margin: 2px 0px 0px 3px; }
+    background-image: url(../images/fb_like.png);
+    width: 40px;
+    height: 30px;
+    margin: -5px 0px 0px 3px; }
+  .btn-like.btn-like-icon {
+    background-color: transparent; }
 
 /**********************4.2**************/
 .home-cate {
@@ -1972,6 +1976,9 @@ iframe {
         margin: 4px 0px 0px -110px;
         width: 100px;
         font-size: 18px; } }
+    .doc-row span em.red {
+      font-style: normal;
+      color: red; }
   .doc-row input {
     display: block;
     width: 100%;
