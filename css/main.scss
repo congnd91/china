@@ -868,14 +868,22 @@ iframe {
         }
         strong {
             display: block;
-            text-align: right;
-            padding: 0px 50px 0px 0px;
+            text-align: left;
+            padding: 0px 0px 0px 80px;
             margin-bottom: 5px;
             @media screen and (max-width: 1360px) {
-                padding: 0px 10px 0px 0px;
+                padding: 0px 0px 0px 50px;
+            }
+            @media screen and (max-width: 1199px) {
+                padding: 0px 0px 0px 30px;
+            }
+
+            @media screen and (max-width: 991px) {
+                padding: 0px 0px 0px 0px;
             }
         }
     }
+
     .f-icon {
         width: 70px;
         height: 50px;
@@ -884,8 +892,6 @@ iframe {
         background-position: center center;
         background-repeat: no-repeat;
 
-
-
         &.f-icon-phone {
             background-image: url(../images/icon_phone.png);
         }
@@ -893,7 +899,10 @@ iframe {
             background-image: url(../images/icon_email.png);
         }
         &.f-icon-facebook {
-            background-image: url(../images/icon_facebook.png);
+
+            height: 0px;
+            background: none;
+
         }
         &.f-icon-android {
             background-image: url(../images/icon_android.png);

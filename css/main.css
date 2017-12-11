@@ -742,12 +742,18 @@ iframe {
         font-size: 16px; } }
     .footer-col p strong {
       display: block;
-      text-align: right;
-      padding: 0px 50px 0px 0px;
+      text-align: left;
+      padding: 0px 0px 0px 80px;
       margin-bottom: 5px; }
       @media screen and (max-width: 1360px) {
         .footer-col p strong {
-          padding: 0px 10px 0px 0px; } }
+          padding: 0px 0px 0px 50px; } }
+      @media screen and (max-width: 1199px) {
+        .footer-col p strong {
+          padding: 0px 0px 0px 30px; } }
+      @media screen and (max-width: 991px) {
+        .footer-col p strong {
+          padding: 0px 0px 0px 0px; } }
   .footer-col .f-icon {
     width: 70px;
     height: 50px;
@@ -760,7 +766,8 @@ iframe {
     .footer-col .f-icon.f-icon-email {
       background-image: url(../images/icon_email.png); }
     .footer-col .f-icon.f-icon-facebook {
-      background-image: url(../images/icon_facebook.png); }
+      height: 0px;
+      background: none; }
     .footer-col .f-icon.f-icon-android {
       background-image: url(../images/icon_android.png);
       display: inline-block; }
